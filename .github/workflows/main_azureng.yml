@@ -57,6 +57,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'azureng'
-          slot-name: 'Production'
-          package: .
+          
+          package: .dist/demo_project
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1D5908C4778741049BEFB729D5575D96 }}
